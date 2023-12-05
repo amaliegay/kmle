@@ -14,7 +14,7 @@ function App() {
 	const favicon = document.getElementById("icon");
 	function changeIcon() {
 		const index = getIconIndex(favicon);
-		if (index) { favicon.setAttribute("href", "/images/icons/" + (parseInt(index) % 4 + 1) + ".png"); }
+		if (index) { favicon.setAttribute("href", "images/icons/" + (parseInt(index) % 4 + 1) + ".png"); }
 	}
 	let timer = null;
 	function startTimer() {
