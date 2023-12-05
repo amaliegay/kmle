@@ -24,6 +24,15 @@ function App() {
 		timer = setInterval(changeIcon, 1000);
 	}
 	startTimer();
+	return (
+		<header>
+			<div id="site-title">
+				<a href="https://amaliegay.github.io/kmle" target="_self">
+					<h1>KMLE</h1>
+				</a>
+			</div>
+		</header>
+	)
 }
 
 export default App
