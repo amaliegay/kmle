@@ -1,10 +1,23 @@
 body {
   margin: 0;
 
-  font-family: Terminal-Grotesque, Helvetica Neue, Arial, sans-serif;
+  font-family: Karrik, Helvetica Neue, Arial, sans-serif;
   line-height: 1;
   font-size: 4rem;
 
   background-color: black;
   color: white;
+}
+
+@font-face {
+  font-family: Karrik;
+  src: url(../public/fonts/Karrik-Regular.ttf);
+}
+@font-face {
+  font-family: Basalte;
+  src: url(../public/fonts/Basalte-Fond.ttf);
+}
+@font-face {
+  font-family: Equateur;
+  src: url(../public/fonts/Equateur-Regular.ttf);
 }
