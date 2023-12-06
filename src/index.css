@@ -1,23 +1,9 @@
-:root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-}
-
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
 
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Terminal-Grotesque, Helvetica Neue, Arial, sans-serif;
+  line-height: 1;
+  font-size: 4rem;
 
   background-color: black;
   color: white;

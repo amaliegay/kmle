@@ -25,13 +25,13 @@ function App() {
 	}
 	startTimer();
 	return (
-		<header>
+		<section id="landing">
 			<div id="site-title">
-				<a href="https://amaliegay.github.io/kmle" target="_self">
-					<h1>KMLE</h1>
-				</a>
+				<h1>KMLE 陈邢很型</h1>
+				<h5>LOVE IS THE ONLY THOUGHT + PAIN IS THE ONLY FEELING</h5>
+				<h5></h5>
 			</div>
-		</header>
+		</section>
 	)
 }
 
