@@ -1,7 +1,7 @@
 body {
   margin: 0;
 
-  font-family: Karrik, Helvetica Neue, Arial, sans-serif;
+  font-family: Karrik, Chinese, Arial, sans-serif;
   line-height: 1;
   font-size: 4rem;
 
@@ -20,4 +20,8 @@ body {
 @font-face {
   font-family: Equateur;
   src: url(../public/fonts/Equateur-Regular.ttf);
+}
+@font-face {
+  font-family: Chinese;
+  src: url(../public/fonts/ZiTiQuanWeiJunHei-W3-2.ttf);
 }

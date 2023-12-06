@@ -6,16 +6,29 @@ section#landing {
   min-height: 100vh;
   text-align: center;
 }
-
+div.leftToRight {
+  display: flex;
+}
 div#site-title h1 {
   color: #000;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
   text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
     -1px 1px 0 #fff;
   margin: 0;
 }
+h1.karrik {
+  font-family: Karrik;
+  font-size: 200%;
+}
+h1.Chinese {
+  font-size: 160%;
+  padding: 12px 0;
+}
 div#site-title h5 {
   font-family: Basalte;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.05em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }
-
