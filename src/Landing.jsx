@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import * as Progress from 'react-native-progress';
-
 import './Landing.css'
 
 function Landing() {
-    const [loading, setLoading] = useState(false)
-
-    useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 8000)
-    }, [])
     return (
         <>
             {
                 loading ?
-                    <Progress.Circle size={30} indeterminate={true} color='rgba(255,255,255,1)' loading={loading} />
+                    <div className='loader' />
                     :
                     <section id="landing">
                         <div id="site-title">

@@ -40,3 +40,35 @@ div#site-title h5 {
   margin-top: 0.5em;
   margin-bottom: 0;
 }
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A0A0A;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader::after{
+    content: "";
+    width: 10vw;
+    height: 10vw;
+    border: 12px solid #000;
+    border-left-color: #FFF;
+    border-radius: 50%;
+    animation: loading 1s ease infinite
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
