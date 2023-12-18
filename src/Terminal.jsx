@@ -3,13 +3,14 @@ import './Terminal.css'
 function Terminal() {
     return (
         <>
-            <pre className="consolas glow-green">
- _  _ __  __ _     _____ 
-| |/ |  \/  | |   | ____|
-| ' /| |\/| | |   |  _|  
-| . \| |  | | |___| |___ 
-|_|\_|_|  |_|_____|_____|
+            <pre class="consolas glow-green">
+                <b> _  _ __  __ _     _____</b>
+                <b>| |/ |  \/  | |   | ____|</b>
+                <b>| ' /| |\/| | |   |  _|</b>
+                <b>| . \| |  | | |___| |___</b>
+                <b>|_|\_|_|  |_|_____|_____|</b>
             </pre>
+            <p>For a list of available commands, type `help`.</p>
         </>
     )
 }
