@@ -2,10 +2,11 @@
   font-family: Consolas, "Courier New";
   margin-left: 50px;
 }
-.glow-pink {
+.logo {
   color: #fafafa;
   text-shadow: 0 0 10px #be6463, 0 0 20px #be6463, 0 0 30px #be6463,
     0 0 40px #be6463, 0 0 50px #be6463, 0 0 60px #be6463, 0 0 70px #be6463;
+  margin-bottom: 50px;
 }
 .no-margin {
   margin-top: 0;
@@ -20,6 +21,10 @@
 .text-pink {
   color: #b95d5d;
 }
-.margin-bottom {
-  margin-bottom: 50px;
+.command {
+  text-decoration: none;
+  color: #fafafa;
+}
+.paddingBetweenCols td {
+  padding: 0 240px 0 0;
 }
