@@ -13,9 +13,6 @@ section#landing {
   cursor: pointer;
   height: 100vh;
   text-align: center;
-
-  line-height: 1;
-  font-size: 4rem;
 }
 div.leftToRight {
   display: flex;
