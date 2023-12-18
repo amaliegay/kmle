@@ -3,7 +3,6 @@ import './Landing.css'
 function Landing() {
     return (
         <>
-            <div className='loader' />
             <section id="landing">
                 <div id="site-title">
                     <div className='leftToRight'><h1 className='karrik'>KMLE </h1><h1 className='Chinese'>陈刑很型</h1></div>
