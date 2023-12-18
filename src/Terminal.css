@@ -1,0 +1,7 @@
+.text-green{
+	color: #a3be8c
+}
+.glow-green{
+	color: #ffffff;
+	text-shadow: 0 0 10px #a3be8c, 0 0 20px #a3be8c, 0 0 30px #a3be8c, 0 0 40px #a3be8c, 0 0 50px #a3be8c, 0 0 60px #a3be8c, 0 0 70px #a3be8c;
+}
