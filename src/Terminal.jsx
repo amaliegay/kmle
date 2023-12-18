@@ -4,7 +4,7 @@ function Terminal() {
     return (
         <>
             <div className="terminal">
-                <div className="glow-pink">
+                <div className="glow-pink margin-bottom">
                     <pre className='no-margin'> _  _ __  __ _     _____</pre>
                     <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
                     <pre className='no-margin'>| ' /| |\/| | |   |  _|</pre>

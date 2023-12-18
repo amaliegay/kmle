@@ -1,21 +1,25 @@
-.terminal{
-    font-family: Consolas, 'Courier New';
-	margin-left: 50px
+.terminal {
+  font-family: Consolas, "Courier New";
+  margin-left: 50px;
 }
-.glow-pink{
-	color: #fafafa;
-	text-shadow: 0 0 10px #be6463, 0 0 20px #be6463, 0 0 30px #be6463, 0 0 40px #be6463, 0 0 50px #be6463, 0 0 60px #be6463, 0 0 70px #be6463;
+.glow-pink {
+  color: #fafafa;
+  text-shadow: 0 0 10px #be6463, 0 0 20px #be6463, 0 0 30px #be6463,
+    0 0 40px #be6463, 0 0 50px #be6463, 0 0 60px #be6463, 0 0 70px #be6463;
 }
-.no-margin{
-	margin-top: 0;
-	margin-bottom: 0
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.terminal-small{
-	font-size: 2rem;
+.terminal-small {
+  font-size: 2rem;
 }
-.text-yellow{
-	color: #be996d
+.text-yellow {
+  color: #be996d;
 }
-.text-pink{
-	color:#b95d5d
+.text-pink {
+  color: #b95d5d;
+}
+.margin-bottom {
+  margin-bottom: 50px;
 }
