@@ -30,6 +30,10 @@ function parse() {
     window = window.open(url, '_self');
 }
 
+function onKeyDown(event) {
+    if (event.keyCode == 13) parse()
+}
+
 function Terminal() {
     return (
         <>
@@ -60,7 +64,7 @@ function Terminal() {
                     <span>@</span>
                     <span>chenx.ing</span>
                     <span>:~ $</span>
-                    <input id="prompt" type="text" autofocus="" autocomplete="off" onKeyDown="if(event.keyCode==13) parse()" />
+                    <input id="prompt" type="text" autofocus="" autocomplete="off" onKeyDown="onKeyDown(event)" />
                 </div>
                 <p id="return" />
             </div >

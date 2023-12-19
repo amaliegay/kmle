@@ -38,6 +38,7 @@ input#prompt{
 	background-color: #000;
   color: #fafafa;
   font-family: Consolas, "Courier New";
+  font-size: 2rem;
   margin-left: 8px;
 }
 input#prompt:focus{
