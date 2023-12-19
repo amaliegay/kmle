@@ -53,7 +53,7 @@ function Terminal() {
                     <table className="paddingBetweenCols">
                         <tr>
                             <td><a id="link_gh" href="https://github.com/amaliegay" target="_blank" className="command">github</a></td>
-                            <td><a href="https://github.com/amaliegay" target="_blank" className="command">links to
+                            <td><a href="https://github.com/amaliegay" target="_blank" className="command-description">links to
                                 my Github profile</a></td>
                         </tr>
                     </table>
@@ -63,13 +63,13 @@ function Terminal() {
                 </div>
                 <div className="cmd-prompt">
                     <div className="flex">
-                        <span className="cmd-prompt text-yellow">guest</span>
-                        <span className="cmd-prompt text-gray">@</span>
-                        <span className="cmd-prompt text-green">chenx.ing</span>
-                        <span className="cmd-prompt text-gray">:~ $</span>
+                        <span className="cmd-prompt">guest</span>
+                        <span className="cmd-prompt">@</span>
+                        <span className="cmd-prompt">chenx.ing</span>
+                        <span className="cmd-prompt">:~ $</span>
                     </div>
                 </div>
-                <input id="prompt" type="text" className="cmd-prompt text-red" autofocus="" autocomplete="off" value="" onKeyDown={onKeyDown} />
+                <input id="prompt" type="text" className="cmd-prompt" autofocus="" autocomplete="off" value="" onKeyDown={onKeyDown} />
                 <p id="return" />
             </div >
         </>

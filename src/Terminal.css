@@ -20,10 +20,24 @@
 .text-pink {
   color: #b95d5d;
 }
-.command {
+.command, .command-description {
   text-decoration: none;
   color: #fafafa;
 }
 .paddingBetweenCols td {
   padding: 0 240px 0 0;
+}
+.cmd-prompt {
+	display: inline-block;
+	flex-shrink: 1;
+}
+input.cmd-prompt{
+	width:80%;
+	min-width: 1px;
+	border: 0;
+	background-color: #000;
+}
+input.cmd-prompt:focus{
+	outline: none;
+	background-color: #000;
 }
