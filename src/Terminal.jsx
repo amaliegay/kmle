@@ -30,16 +30,10 @@ function parse() {
     window = window.open(url, '_self');
 }
 
-function onKeyDown(event) {
-    if (event.keyCode === 13) {
-        parse();
-    }
-}
-
 function Terminal() {
     return (
         <>
-            <div id="terminal" onLoad={autoFocus}>
+            <div id="terminal" onLoad="autoFocus()">
                 <div className="logo">
                     <pre className='no-margin'> _  _ __  __ _     _____</pre>
                     <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
@@ -61,12 +55,12 @@ function Terminal() {
                     <br />
                     <br />
                 </div>
-                <div>
+                <div className='cmd-prompt'>
                     <span>guest</span>
                     <span>@</span>
                     <span>chenx.ing</span>
                     <span>:~ $</span>
-                    <input id="prompt" type="text" autofocus="" autocomplete="off" value="" onKeyDown={onKeyDown} />
+                    <input id="prompt" type="text" autofocus="" autocomplete="off" onKeyDown="if(event.keyCode==13) parse()" />
                 </div>
                 <p id="return" />
             </div >

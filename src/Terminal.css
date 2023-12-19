@@ -40,6 +40,3 @@ input.cmd-prompt:focus{
 	outline: none;
 	background-color: #000;
 }
-.flex{
-	display:flex;
-}
