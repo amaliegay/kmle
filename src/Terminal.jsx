@@ -1,5 +1,5 @@
-import CommandError from './components/CommandError.js'
-import GitHubCommand from './components/commands/GitHubCommand.js'
+import CommandError from './components/CommandError.jsx'
+import GitHubCommand from './components/commands/GitHubCommand.jsx'
 import './Terminal.css'
 
 function autoFocus() {
