@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import CommandError from './components/CommandError.jsx'
 import GitHubCommand from './components/commands/GitHubCommand.jsx'
 import './Terminal.css'
@@ -54,11 +56,13 @@ function CommandList() {
             <div className="command-list">
                 <p>Commands:</p>
                 <table className="paddingBetweenCols">
-                    <tr>
-                        <td><a id="link_gh" href="https://github.com/amaliegay" target="_blank" className="command">github</a></td>
-                        <td><a href="https://github.com/amaliegay" target="_blank" className="command-description">links to
-                            my Github profile</a></td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td><a id="link_gh" href="https://github.com/amaliegay" target="_blank" className="command">github</a></td>
+                            <td><a href="https://github.com/amaliegay" target="_blank" className="command-description">links to
+                                my Github profile</a></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <br />
                 <br />
@@ -68,14 +72,7 @@ function CommandList() {
     )
 }
 
-useEffect(() => {
-    if (commandRef.current) {
-        commandRef.current.focus();
-    }
-}, []);
-
 function CommandPrompt() {
-    const commandRef = useRef(null);
     const [inputValue, setInputValue] = useState('');
     return (
         <div className='cmd-prompt'>
@@ -83,7 +80,7 @@ function CommandPrompt() {
             <span>@</span>
             <span className='domain-name'>chenx.ing</span>
             <span>:~ $</span>
-            <input id="prompt" type="text" autofocus="" autocomplete="off" ref={commandRef} value={inputValue} onKeyDown={handleKeyPress}></input>
+            <input id="prompt" type="text" autoFocus={true} autoComplete={"off"} onKeyDown={handleKeyPress}></input>
         </div>
     )
 }
@@ -91,7 +88,7 @@ function CommandPrompt() {
 function Terminal() {
     return (
         <>
-            <div id="terminal" onLoad="autoFocus()">
+            <div id="terminal" onLoad={autoFocus}>
                 <Logo />
                 <CommandList />
                 <CommandPrompt />

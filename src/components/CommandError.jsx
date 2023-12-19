@@ -1,5 +1,5 @@
 import React from 'react';
-import CommandLine from './CommandLine.js'
+import CommandLine from './CommandLine.jsx'
 
 const CommandError = (props) => {
     const command = props.command;

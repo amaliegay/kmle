@@ -1,5 +1,5 @@
 import React from 'react';
-import CommandLine from '../CommandLine.js';
+import CommandLine from '../CommandLine.jsx';
 
 const GitHubCommand = (props) => {
     const command = props.command;
