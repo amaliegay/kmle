@@ -31,9 +31,11 @@ function parse() {
 }
 
 function Terminal() {
+    document.getElementById("terminal").addEventListener("load", autoFocus);
+    document.getElementById("prmopt").addEventListener("keydown", function () { if (event.keyCode == 13) parse() });
     return (
         <>
-            <div className="terminal" onload="autoFocus()">
+            <div id="terminal">
                 <div className="logo">
                     <pre className='no-margin'> _  _ __  __ _     _____</pre>
                     <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
@@ -63,7 +65,7 @@ function Terminal() {
                         <span class="cmd-prompt text-gray">:~ $</span>
                     </div>
                 </div>
-                <input id="prompt" type="text" class="cmd-prompt text-red" autoFocus autocomplete="off" value="" onKeyDown="if(event.keyCode==13) parse()" />
+                <input id="prompt" type="text" class="cmd-prompt text-red" autofocus autocomplete="off" value="" />
                 <p id="return" />
             </div >
         </>
