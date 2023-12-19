@@ -30,6 +30,7 @@
 .cmd-prompt {
 	display: flex;
   align-items: center;
+  padding-top: 10
 }
 input#prompt{
 	width:70%;
