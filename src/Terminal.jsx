@@ -47,8 +47,8 @@ function Terminal() {
                     <pre className='no-margin'>| . \| |  | | |___| |___</pre>
                     <pre className='no-margin'>|_|\_|_|  |_|_____|_____|</pre>
                 </div>
-                <p className='terminal-small'>For a list of available commands, type `help`.</p>
-                <div className="commands terminal-small">
+                <p>For a list of available commands, type `help`.</p>
+                <div className="commands">
                     <p>Commands:</p>
                     <table className="paddingBetweenCols">
                         <tr>
