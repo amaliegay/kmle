@@ -30,12 +30,16 @@ function parse() {
     window = window.open(url, '_self');
 }
 
+function onKeyDown(event) {
+    if (event.keyCode === 13) {
+        parse();
+    }
+}
+
 function Terminal() {
-    document.getElementById("terminal").addEventListener("load", autoFocus);
-    document.getElementById("prmopt").addEventListener("keydown", function () { if (event.keyCode == 13) parse() });
     return (
         <>
-            <div id="terminal">
+            <div id="terminal" onLoad={autoFocus}>
                 <div className="logo">
                     <pre className='no-margin'> _  _ __  __ _     _____</pre>
                     <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
@@ -65,7 +69,7 @@ function Terminal() {
                         <span class="cmd-prompt text-gray">:~ $</span>
                     </div>
                 </div>
-                <input id="prompt" type="text" class="cmd-prompt text-red" autofocus autocomplete="off" value="" />
+                <input id="prompt" type="text" class="cmd-prompt text-red" autofocus autocomplete="off" value="" onKeyDown={onKeyDown} />
                 <p id="return" />
             </div >
         </>
