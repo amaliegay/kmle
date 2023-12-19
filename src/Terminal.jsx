@@ -63,13 +63,13 @@ function Terminal() {
                 </div>
                 <div className="cmd-prompt">
                     <div className="flex">
-                        <span class="cmd-prompt text-yellow">guest</span>
-                        <span class="cmd-prompt text-gray">@</span>
-                        <span class="cmd-prompt text-green">chenx.ing</span>
-                        <span class="cmd-prompt text-gray">:~ $</span>
+                        <span className="cmd-prompt text-yellow">guest</span>
+                        <span className="cmd-prompt text-gray">@</span>
+                        <span className="cmd-prompt text-green">chenx.ing</span>
+                        <span className="cmd-prompt text-gray">:~ $</span>
                     </div>
                 </div>
-                <input id="prompt" type="text" class="cmd-prompt text-red" autofocus autocomplete="off" value="" onKeyDown={onKeyDown} />
+                <input id="prompt" type="text" className="cmd-prompt text-red" autofocus="" autocomplete="off" value="" onKeyDown={onKeyDown} />
                 <p id="return" />
             </div >
         </>
