@@ -64,7 +64,7 @@ function Terminal() {
                     <span>@</span>
                     <span>chenx.ing</span>
                     <span>:~ $</span>
-                    <input id="prompt" type="text" autofocus="" autocomplete="off" onKeyDown="onKeyDown(event)" />
+                    <input id="prompt" type="text" autofocus="" autocomplete="off" onkeydown="onKeyDown(event)" />
                 </div>
                 <p id="return" />
             </div >
