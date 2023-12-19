@@ -36,34 +36,36 @@ const handleKeyPress = (event) => {
 };
 
 function Logo() {
-    return
-    <div className="logo">
-        <pre className='no-margin'> _  _ __  __ _     _____</pre>
-        <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
-        <pre className='no-margin'>| ' /| |\/| | |   |  _|</pre>
-        <pre className='no-margin'>| . \| |  | | |___| |___</pre>
-        <pre className='no-margin'>|_|\_|_|  |_|_____|_____|</pre>
-    </div>
+    return (
+        <div className="logo">
+            <pre className='no-margin'> _  _ __  __ _     _____</pre>
+            <pre className='no-margin'>| |/ |  \/  | |   | ____|</pre>
+            <pre className='no-margin'>| ' /| |\/| | |   |  _|</pre>
+            <pre className='no-margin'>| . \| |  | | |___| |___</pre>
+            <pre className='no-margin'>|_|\_|_|  |_|_____|_____|</pre>
+        </div>
+    )
 }
 
 function CommandList() {
-    return
-    <>
-        <p>For a list of available commands, type `help`.</p>
-        <div className="command-list">
-            <p>Commands:</p>
-            <table className="paddingBetweenCols">
-                <tr>
-                    <td><a id="link_gh" href="https://github.com/amaliegay" target="_blank" className="command">github</a></td>
-                    <td><a href="https://github.com/amaliegay" target="_blank" className="command-description">links to
-                        my Github profile</a></td>
-                </tr>
-            </table>
-            <br />
-            <br />
-            <br />
-        </div>
-    </>
+    return (
+        <>
+            <p>For a list of available commands, type `help`.</p>
+            <div className="command-list">
+                <p>Commands:</p>
+                <table className="paddingBetweenCols">
+                    <tr>
+                        <td><a id="link_gh" href="https://github.com/amaliegay" target="_blank" className="command">github</a></td>
+                        <td><a href="https://github.com/amaliegay" target="_blank" className="command-description">links to
+                            my Github profile</a></td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+            </div>
+        </>
+    )
 }
 
 useEffect(() => {
@@ -75,14 +77,15 @@ useEffect(() => {
 function CommandPrompt() {
     const commandRef = useRef(null);
     const [inputValue, setInputValue] = useState('');
-    return
-    <div className='cmd-prompt'>
-        <span className='username'>guest</span>
-        <span>@</span>
-        <span className='domain-name'>chenx.ing</span>
-        <span>:~ $</span>
-        <input id="prompt" type="text" autofocus="" autocomplete="off" ref={commandRef} value={inputValue} onKeyDown={handleKeyPress}></input>
-    </div>
+    return (
+        <div className='cmd-prompt'>
+            <span className='username'>guest</span>
+            <span>@</span>
+            <span className='domain-name'>chenx.ing</span>
+            <span>:~ $</span>
+            <input id="prompt" type="text" autofocus="" autocomplete="off" ref={commandRef} value={inputValue} onKeyDown={handleKeyPress}></input>
+        </div>
+    )
 }
 
 function Terminal() {
