@@ -28,8 +28,7 @@
   padding: 0 240px 0 0;
 }
 .cmd-prompt {
-	display: inline-block;
-	flex-shrink: 1;
+	display: flex;
 }
 input.cmd-prompt{
 	width:80%;
@@ -40,4 +39,7 @@ input.cmd-prompt{
 input.cmd-prompt:focus{
 	outline: none;
 	background-color: #000;
+}
+.flex{
+	display:flex;
 }
