@@ -29,14 +29,17 @@
 }
 .cmd-prompt {
 	display: flex;
+  align-items: center;
 }
-input.cmd-prompt{
-	width:80%;
+input#prompt{
+	width:70%;
 	min-width: 1px;
 	border: 0;
 	background-color: #000;
+  color: #fafafa;
+  font-family: Consolas, "Courier New";
+  margin-left: 8px;
 }
-input.cmd-prompt:focus{
+input#prompt:focus{
 	outline: none;
-	background-color: #000;
 }
