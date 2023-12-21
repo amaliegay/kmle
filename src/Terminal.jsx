@@ -11,6 +11,8 @@ function autoFocus() {
     });
 }
 
+const [inputValue, setInputValue] = useState('');
+
 function handleSubmit() {
     setInputValue('');
 
@@ -73,14 +75,13 @@ function CommandList() {
 }
 
 function CommandPrompt() {
-    const [inputValue, setInputValue] = useState('');
     return (
         <div className='cmd-prompt'>
             <span className='username'>guest</span>
             <span>@</span>
             <span className='domain-name'>chenx.ing</span>
             <span>:~ $</span>
-            <input id="prompt" type="text" autoFocus={true} autoComplete={"off"} onKeyDown={handleKeyPress}></input>
+            <input id="prompt" type="text" autoFocus={true} autoComplete={"off"} value={inputValue} onKeyDown={handleKeyPress}></input>
         </div>
     )
 }
